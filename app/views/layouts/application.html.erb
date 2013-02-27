@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<div class="navbar navbar-fixed-top">
+  	<div class="navbar-inner">
+	<div class="container">
+		<a href="#" class="brand">Swoopish</a>
+		<ul class="nav">
+			<li><%= link_to "My Statuses", statuses_path %></li>
+	</div>
+</div>
+</div>
 <%= yield %>
-
+<strong>Powered by Swoopish 2013</strong>
+</div>
 </body>
 </html>
